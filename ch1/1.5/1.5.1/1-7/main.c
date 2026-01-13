@@ -1,0 +1,13 @@
+/*
+Exercise 1-7. Write a program to print the value of EOF.
+*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf("%d\n", EOF); // prints -1
+    putchar(EOF);        // prints garbage since EOF = -1 and putchar expects an unsigned char code
+    putchar('\n');
+    return 0;
+}

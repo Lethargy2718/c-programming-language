@@ -1,0 +1,4 @@
+sample input file with blanks,   tabs
+and newlines
+
+run ./main < input.txt to use this as an input file for main.c
