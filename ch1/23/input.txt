@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+/* This is a block comment */
+int main(void) {
+    int x = 10; // single-line comment
+    int y = x / 2; /* division, not comment */
+
+    printf("Hello, world!\n"); // print greeting
+
+    printf("This is not a comment: /* */\n");
+    printf("Neither is this: // nope\n");
+
+    char c1 = '/';
+    char c2 = '*';
+    char c3 = '\'';
+    char c4 = '"';
+
+    printf("Escaped quote: \" and escaped slash: \\/\n");
+
+    // A comment with /* fake block start
+    // still in single-line comment */
+
+    /*
+        Multi-line block comment
+        with // fake single-line inside
+
+
+
+
+
+
+
+
+
+        
+    **/
+
+    printf("Back to code\n");
+
+    /* Unterminated block comment test (should remove until EOF)
+}
