@@ -49,7 +49,7 @@ void itoa(int n, char s[])
     int i, sign;
     unsigned num;
 
-    num = (sign = n) < 0 ? -(unsigned)n : (unsigned)n;
+    num = (unsigned)((sign = n) < 0 ? -n : n);
 
     i = 0;
     do
