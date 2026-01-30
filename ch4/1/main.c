@@ -5,8 +5,6 @@ occurrence of t in s, or -1 if there is none.
 
 #include <stdio.h>
 
-#define MAXLINE 1000
-
 int strindex(char s[], char t[]);
 
 int main(void)
